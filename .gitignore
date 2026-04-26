@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+.ros/
+*.pgm
+*.bag
+.DS_Store
