@@ -293,7 +293,7 @@ ip route show default | awk '{print $3}'
 
 **Sudeeksha** — Built with ROS2, Gazebo Harmonic, Nav2, and Ollama
 
-*[LinkedIn](https://linkedin.com/in/sudeekshach)*
+*[LinkedIn](https://www.linkedin.com/in/sudeeksha-chagarlamudi/)*
 
 ---
 
