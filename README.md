@@ -26,19 +26,42 @@ NavMind is an autonomous home robot system that understands natural language ins
 
 ## 🏗️ System Architecture
 
-User Input (Streamlit Chat UI)
-↓
-LLM Intent Parser (Ollama + Llama 3.2:1b)
-↓
-ROS2 Topic → /navmind/command
-↓
-NavMind Node (navmind_node.py)
-↓
-Nav2 Navigation Stack (AMCL + NavFn + DWB)
-↓
-TurtleBot3 Burger in Gazebo Harmonic
-↓
-LLM Commentary → /navmind/commentary
+```
+┌─────────────────────────────┐
+│     Streamlit Chat UI        │
+│  "Clean the kitchen"         │
+└────────────┬────────────────┘
+             ↓
+┌─────────────────────────────┐
+│   LLM Intent Parser          │
+│   Ollama + Llama 3.2:1b      │
+└────────────┬────────────────┘
+             ↓
+┌─────────────────────────────┐
+│   ROS2 Topic                 │
+│   /navmind/command           │
+└────────────┬────────────────┘
+             ↓
+┌─────────────────────────────┐
+│   NavMind Node               │
+│   navmind_node.py            │
+└────────────┬────────────────┘
+             ↓
+┌─────────────────────────────┐
+│   Nav2 Navigation Stack      │
+│   AMCL + NavFn + DWB         │
+└────────────┬────────────────┘
+             ↓
+┌─────────────────────────────┐
+│   TurtleBot3 Burger          │
+│   Gazebo Harmonic            │
+└────────────┬────────────────┘
+             ↓
+┌─────────────────────────────┐
+│   LLM Commentary             │
+│   /navmind/commentary        │
+└─────────────────────────────┘
+```
 
 ---
 
