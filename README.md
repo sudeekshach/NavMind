@@ -202,30 +202,33 @@ Open **http://localhost:8501** in your browser and start giving commands!
 
 ## 📁 Project Structure
 
+```
 NavMind/
 ├── config/
-│   ├── nav2_params.yaml           # Nav2 navigation parameters
-│   ├── ros_gz_bridge.yaml         # ROS↔Gazebo bridge config
-│   ├── slam_toolbox_params.yaml   # SLAM mapping config
-│   └── turtlebot3_burger.urdf     # Robot description
+│   ├── nav2_params.yaml
+│   ├── ros_gz_bridge.yaml
+│   ├── slam_toolbox_params.yaml
+│   └── turtlebot3_burger.urdf
 ├── dashboard/
-│   └── navmind_app.py             # Streamlit chat interface
+│   └── navmind_app.py
 ├── launch/
-│   └── navmind_home.launch.py     # Main ROS2 launch file
+│   └── navmind_home.launch.py
 ├── maps/
-│   ├── house_map.pgm              # Pre-built occupancy map
-│   └── house_map.yaml             # Map metadata
+│   ├── house_map.pgm
+│   └── house_map.yaml
 ├── models/
-│   └── turtlebot3_burger/         # Gazebo robot model
+│   └── turtlebot3_burger/
+│       ├── meshes/
+│       └── model.sdf
 ├── scripts/
-│   ├── activate_nav2.sh           # Nav2 lifecycle activation
-│   ├── generate_map.py            # Map generation utility
-│   ├── navmind_coverage.py        # Standalone coverage script
-│   ├── navmind_node.py            # Main NavMind ROS2 node
-│   └── tf_fix.py                  # TF frame correction node
+│   ├── activate_nav2.sh
+│   ├── generate_map.py
+│   ├── navmind_coverage.py
+│   ├── navmind_node.py
+│   └── tf_fix.py
 └── worlds/
-└── navmind_home.sdf           # Gazebo house world
-
+    └── navmind_home.sdf
+```
 ---
 
 ## 🔧 Troubleshooting
