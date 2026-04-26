@@ -8,7 +8,9 @@ NavMind is an autonomous home robot system that understands natural language ins
 
 ## 🎥 Demo
 
-*Coming soon*
+[![NavMind Demo](https://img.youtube.com/vi/BZ5JRLSqSuY/maxresdefault.jpg)](https://youtu.be/BZ5JRLSqSuY)
+
+*Click to watch the full demo on YouTube*
 
 ---
 
